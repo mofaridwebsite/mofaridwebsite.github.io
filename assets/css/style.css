@@ -1032,3 +1032,66 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+/*--------------------------------------------------------------
+# Hero calls to action
+--------------------------------------------------------------*/
+#header .hero-sub {
+  max-width: 620px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 17px;
+  margin: 4px 0 22px 0;
+}
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.contact-cta {
+  justify-content: center;
+}
+.btn-cta {
+  display: inline-block;
+  padding: 11px 26px;
+  border-radius: 50px;
+  background: #18d26e;
+  border: 2px solid #18d26e;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.btn-cta:hover {
+  background: #35e888;
+  border-color: #35e888;
+  color: #fff;
+}
+.btn-cta-outline {
+  background: transparent;
+  color: #fff;
+}
+.btn-cta-outline:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #fff;
+}
+#header.header-top .hero-sub, #header.header-top .hero-cta {
+  display: none;
+}
+@media (max-width: 992px) {
+  #header .hero-sub {
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #header .hero-cta {
+    justify-content: center;
+  }
+}
+
+/* Keep the portrait in frame on narrow screens */
+@media (max-width: 1023px) {
+  body::before {
+    background-position: 40% top;
+  }
+}
